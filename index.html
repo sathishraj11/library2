@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add a Book</h2>
+        <input type="text" id="title" placeholder="Book Title">
+        <input type="text" id="author" placeholder="Author Name">
+        <input type="text" id="isbn" placeholder="ISBN">
+        <input type="text" id="publisher" placeholder="Publisher">
+        <input type="text" id="language" placeholder="Language">
+        <input type="number" id="pages" placeholder="Number of Pages">
+        <button onclick="addBook()">Add Book</button>
+
+        <h2>Add a Member</h2>
+        <input type="text" id="memberName" placeholder="Member Name">
+        <input type="password" id="memberPassword" placeholder="Password">
+        <button onclick="addMember()">Add Member</button>
+
+        <h2>Borrow a Book</h2>
+        <input type="text" id="borrowMemberId" placeholder="Member ID">
+        <input type="text" id="borrowBookBarcode" placeholder="Book Barcode">
+        <button onclick="borrowBook()">Borrow</button>
+
+        <h2>Return a Book</h2>
+        <input type="text" id="returnMemberId" placeholder="Member ID">
+        <input type="text" id="returnBookBarcode" placeholder="Book Barcode">
+        <button onclick="returnBook()">Return</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
